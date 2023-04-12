@@ -35,7 +35,9 @@ namespace ConsoleApp1
                 MultiplicaciónVectores[k] = Vector1[k] * Vector2[k];
             }
             Console.WriteLine("La multiplicación de Vectores es");
-            Console.WriteLine(String.Join(",", MultiplicaciónVectores));
+            foreach (int numero in MultiplicaciónVectores)
+                Console.Write(numero + " ");
+            
         }
     }
 }
