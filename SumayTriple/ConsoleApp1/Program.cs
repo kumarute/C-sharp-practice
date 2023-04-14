@@ -12,7 +12,7 @@ namespace SumayTriple
         {
             Console.WriteLine("Introduce dos números separados por comas");
             string NumerosString = Console.ReadLine(); //lee los numeros
-            string[] NumerosArray = NumerosString.Split(',');// la funcion split crea un aaray de subcadenas separando los numeros por las comas
+            string[] NumerosArray = NumerosString.Split(',');// la funcion split crea un array de subcadenas separando los numeros por las comas
             int[] Numeros = Array.ConvertAll(NumerosArray, int.Parse);//convierte NumerosArray del tipo array de strings a tipo int
 
             int Suma = 0;
@@ -29,7 +29,7 @@ namespace SumayTriple
 
         static void Main(string[] args)
         {
-            Console.WriteLine(SumaArray());
+            Console.WriteLine(SumaArray());//Llamamos a la función en Main
         }
     }
 }
